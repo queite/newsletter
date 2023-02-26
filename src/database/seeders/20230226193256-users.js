@@ -9,12 +9,12 @@ module.exports = {
         {
           user: "queite",
           email: "queitesc@gmail.com",
-          birthdate: "26/03/1986",
+          birthdate: "2000-12-05",
         },
         {
           user: "Joao",
           email: "testedev987@outlook.com",
-          birthdate: "26/02/2023",
+          birthdate: "2023-02-27",
         },
       ],
       {}
