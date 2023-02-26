@@ -17,5 +17,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "42525771-302a-48fc-b597-4ab38ac3ddeb",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/news",
+    "url": "localhost:3000/news",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-02-26T20:41:08.040Z",
+    "modified": "2023-02-26T20:41:08.040Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Vacina bivalente contra Covid-19\",\n  \"description\": \"Vacina bivalente contra Covid-19 começa a ser aplicada na segunda em Salvador; veja lista de postos\",\n  \"link\": \"https://g1.globo.com/ba/bahia/noticia/2023/02/26/vacina-bivalente-contra-covid-19-comeca-a-ser-aplicada-na-segunda-em-salvador-veja-lista-de-postos.ghtml\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
