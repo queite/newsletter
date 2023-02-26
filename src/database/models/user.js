@@ -9,11 +9,12 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
       },
       user: DataTypes.STRING,
-      birthdate: DataTypes.DATE,
       email: DataTypes.STRING,
+      birthdate: DataTypes.DATEONLY,
     },
     {
       timestamps: false,
+      tableName: "user",
     }
   );
   return User;
