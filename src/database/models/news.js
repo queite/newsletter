@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.DATE,
       description: DataTypes.STRING,
       link: DataTypes.STRING,
+      sent: DataTypes.BOOLEAN,
     },
     {
       timestamps: false,
