@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  var News = sequelize.define(
-    "news",
+  const News = sequelize.define(
+    'news',
     {
       id: {
         allowNull: false,
@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       timestamps: false,
-      tableNAme: "news",
+      tableNAme: 'news',
     }
   );
   return News;

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon ./src/server.js",
     "prestart": "npx sequelize-cli db:migrate && npx sequelize db:seed:all",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.js ."
   },
   "author": "Queite Schneider Castiglioni",
   "license": "ISC",
@@ -20,7 +21,15 @@
     "sqlite3": "^5.1.4"
   },
   "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.20",
+    "prettier": "^2.8.4",
     "sequelize-cli": "^6.6.0"
   }
 }

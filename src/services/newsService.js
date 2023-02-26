@@ -1,4 +1,4 @@
-const db = require("../database/models");
+const db = require('../database/models');
 
 const newsService = {
   create: async ({ title, description, link }) => {
