@@ -11,7 +11,7 @@ module.exports = {
         },
         {
           user: 'Joao',
-          email: 'testedev987@outlook.com',
+          email: 'queitesc@yahoo.com.br',
           birthdate: '2023-02-27',
         },
       ],
