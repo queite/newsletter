@@ -18,6 +18,7 @@ const transporter = nodemailer.createTransport({
 });
 
 function sendEmail(users, newsHTML) {
+  const date = new Date().toISOString();
   return new Promise((resolve, reject) => {
     users.forEach((user) => {
       const emailOptions = {
@@ -33,7 +34,10 @@ function sendEmail(users, newsHTML) {
             </head>
             <body>
                 <h2>Bom dia ${user.user}! ${
-          user.birthday ? 'Feliz aniversário' : '!'
+          user.birthdate.substring(5, 7) === date.substring(5, 7) &&
+          user.birthdate.substring(8, 10) === date.substring(8, 10)
+            ? 'Feliz aniversário'
+            : ''
         }</h2>
               <p>Segue as notícias de hoje.</p>
               <br>

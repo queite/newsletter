@@ -5,7 +5,7 @@ module.exports = {
       'news',
       [
         {
-          title: 'Tragédia do litoral de SPueite',
+          title: 'Tragédia do litoral de SP',
           description:
             'Encontro do último corpo aconteceu na tarde deste domingo (26), justamente uma semana depois do temporal histórico. Com as buscas encerradas, foco agora é identificar as vítimas localizadas.',
           link: 'https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2023/02/26/tragedia-do-litoral-de-sp-corpo-do-ultimo-desaparecido-e-encontrado-e-numero-de-mortes-sobe-para-65.ghtml',
