@@ -14,14 +14,15 @@ app.use(express.json());
 app.use('/user', userRouter);
 app.use('/news', newsRouter);
 
-cron.schedule('* * * * *', async () => {
+cron.schedule('0 0 8 * * *', async () => {
   const sendList = await userService.list();
   const notSentNews = await newsService.listNotSent();
   const newsHtml = createHTMLNews(notSentNews);
   sendEmail(sendList, newsHtml)
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
-  console.log('Tasked scheduled with 1 minute interval');
+  const ids = notSentNews.map((item) => item.id);
+  await newsService.update(ids);
 });
 
 module.exports = app;

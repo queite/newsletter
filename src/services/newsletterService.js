@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const transporter = nodemailer.createTransport({
   pool: true,
-  host: 'smtp-mail.outlook.com',
+  host: process.env.HOST,
   port: 587,
   auth: {
     user: process.env.EMAIL,
